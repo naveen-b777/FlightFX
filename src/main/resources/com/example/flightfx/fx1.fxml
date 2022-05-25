@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9ED1E5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightfx.HelloController">
+   <children>
+      <ImageView fitHeight="248.0" fitWidth="211.0" layoutX="219.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="111.0" layoutY="234.0" prefHeight="27.0" prefWidth="378.0" promptText="Enter Airport Name/Code" />
+      <Button layoutX="242.0" layoutY="279.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="130.0" style="-fx-background-color: #149499;" text="Search" textFill="WHITE" />
+      <ImageView fitHeight="72.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../design.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="600.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../designCopy.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
