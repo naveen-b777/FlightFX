@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 
@@ -38,6 +39,7 @@ public class Controller {
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         Stage stage = new Stage();
         stage.setTitle("Search By Airport");
+        stage.getIcons().add(new Image("logo.png"));
         stage.setScene(scene);
         stage.show();
     }
@@ -48,6 +50,7 @@ public class Controller {
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         Stage stage = new Stage();
         stage.setTitle("Search by Route");
+        stage.getIcons().add(new Image("logo.png"));
         stage.setScene(scene);
         stage.show();
     }
@@ -58,6 +61,7 @@ public class Controller {
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         Stage stage = new Stage();
         stage.setTitle("Search by Route");
+        stage.getIcons().add(new Image("logo.png"));
         stage.setScene(scene);
         stage.show();
     }
