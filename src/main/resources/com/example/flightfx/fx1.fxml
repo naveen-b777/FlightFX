@@ -31,7 +31,7 @@
             <TableColumn minWidth="0.0" prefWidth="130.4000244140625" text="Airline" />
         </columns>
       </TableView>
-      <Label fx:id="LABEL" layoutX="21.0" layoutY="87.0" text="Select From Given Airports :">
+      <Label fx:id="BLRtime" layoutX="21.0" layoutY="87.0" text="Select From Given Airports :">
          <font>
             <Font name="Calibri Bold" size="24.0" />
          </font></Label>

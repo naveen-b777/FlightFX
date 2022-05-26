@@ -17,18 +17,18 @@ public class Controller {
     @FXML
     private Label welcomeText;
     @FXML
-    private Label BLRtime;
+    public static Label BLRtime;
     @FXML
-    private Label BLRroute;
+    public static Label BLRroute;
     @FXML
-    private Label BLRaircraft;
+    public static Label BLRaircraft;
     @FXML
-    private Label BLRtype;
+    public static Label BLRtype;
     @FXML
-    private Label BLRairline;
+    public static Label BLRairline;
 
 //    @FXML
-//    protected void onHelloButtonClick() {
+//    pro4tected void onHelloButtonClick() {
 //        welcomeText.setText("Welcome to Flight Data Studio");
 //    }
 
