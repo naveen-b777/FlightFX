@@ -11,6 +11,13 @@ module com.example.flightfx {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
+    requires javafx.graphics;
+    requires javafx.base;
+
+    requires java.sql;
+    requires java.datatransfer;
+
+
     opens com.example.flightfx to javafx.fxml;
     exports com.example.flightfx;
 }

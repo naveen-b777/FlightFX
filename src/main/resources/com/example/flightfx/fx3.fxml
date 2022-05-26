@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9ED1E5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightfx.HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9ED1E5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightfx.AirportChoice">
    <children>
-      <ImageView fitHeight="248.0" fitWidth="211.0" layoutX="219.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="142.0" fitWidth="104.0" layoutX="499.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../logo.png" />
          </image>
       </ImageView>
-      <TextField layoutX="111.0" layoutY="234.0" prefHeight="27.0" prefWidth="378.0" promptText="Enter Airport Name/Code" />
-      <Button layoutX="242.0" layoutY="279.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="130.0" style="-fx-background-color: #149499;" text="Search" textFill="WHITE" />
       <ImageView fitHeight="72.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../design.png" />
@@ -26,5 +27,24 @@
             <Image url="@../../../designCopy.png" />
          </image>
       </ImageView>
+      <TableView layoutX="21.0" layoutY="146.0" prefHeight="194.0" prefWidth="535.0" style="-fx-background-color: #149499;">
+         <columns>
+            <TableColumn prefWidth="164.0" text="Time" />
+            <TableColumn prefWidth="200.0" text="Route" />
+            <TableColumn prefWidth="172.79998779296875" text="Aircraft" />
+         </columns>
+      </TableView>
+      <Label fx:id="LABEL" layoutX="21.0" layoutY="87.0" text="Select From Given Airlines :">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font></Label>
+      <MenuButton layoutX="305.0" layoutY="86.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="190.0" style="-fx-background-color: #149499;" text="Options" textAlignment="JUSTIFY">
+         <items>
+            <MenuItem mnemonicParsing="false" text="IndiGo" />
+            <MenuItem mnemonicParsing="false" text="AirAsia" />
+            <MenuItem mnemonicParsing="false" text="GoFirst" />
+            <MenuItem mnemonicParsing="false" text="Air India" />
+         </items>
+      </MenuButton>
    </children>
 </AnchorPane>
