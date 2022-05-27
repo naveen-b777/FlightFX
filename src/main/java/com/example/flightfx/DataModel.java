@@ -1,22 +1,22 @@
 package com.example.flightfx;
 
 public class DataModel {
-    String Time_,Route,Aircraft,Type_,Airline;
+    String Time,Route,Aircraft,Type,Airline;
 
-    public DataModel(String Time_, String Route, String Aircraft, String Type_, String Airline) {
-        this.Time_ = Time_;
+    public DataModel(String Time, String Route, String Aircraft, String Type, String Airline) {
+        this.Time = Time;
         this.Route= Route;
         this.Aircraft = Aircraft;
-        this.Type_ = Type_;
+        this.Type = Type;
         this.Airline = Airline;
     }
 
-    public String getTime_() {
-        return Time_;
+    public String getTime() {
+        return Time;
     }
 
-    public void setTime_(String Time_) {
-        Time_ = Time_;
+    public void setTime(String Time) {
+        Time = Time;
     }
 
     public String getRoute() {
@@ -35,12 +35,12 @@ public class DataModel {
         Aircraft = Aircraft;
     }
 
-    public String getType_() {
-        return Type_;
+    public String getType() {
+        return Type;
     }
 
-    public void setType_(String Type_) {
-        Type_ = Type_;
+    public void setType(String Type) {
+        Type = Type;
     }
 
     public String getAirline() {

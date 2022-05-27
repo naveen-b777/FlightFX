@@ -1,37 +1,29 @@
 package com.example.flightfx;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.event.ActionEvent;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
 
-public class Controller {
-    @FXML
-    private Label welcomeText;
-    @FXML
-    public static Label BLRtime;
-    @FXML
-    public static Label BLRroute;
-    @FXML
-    public static Label BLRaircraft;
-    @FXML
-    public static Label BLRtype;
-    @FXML
-    public static Label BLRairline;
-
-//    @FXML
-//    pro4tected void onHelloButtonClick() {
-//        welcomeText.setText("Welcome to Flight Data Studio");
-//    }
+public class Controller  {
 
     @FXML
     protected void onFirstButtonClick() throws IOException {
@@ -65,31 +57,5 @@ public class Controller {
         stage.setScene(scene);
         stage.show();
     }
-
-    public void blrAirport(ActionEvent event){
-        DatabaseConnection connectNow = new DatabaseConnection();
-        Connection connectDB = connectNow.getConnection();
-
-        String connectQuery = "SELECT * FROM BLR";
-        System.out.println(connectQuery);
-
-        try {
-
-            Statement statement = connectDB.createStatement();
-            ResultSet queryOutput = statement.executeQuery(connectQuery);
-
-            while (queryOutput.next()) {
-                BLRtime.setText(queryOutput.getString("Time_"));
-                BLRroute.setText(queryOutput.getString("Route"));
-                BLRaircraft.setText(queryOutput.getString("Aircraft"));
-                BLRtype.setText(queryOutput.getString("Type_"));
-                BLRairline.setText(queryOutput.getString("Airline"));
-
-            }
-        } catch (Exception e){
-            System.out.println(e.getMessage());
-        }
-    }
-
 
 }
