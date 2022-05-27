@@ -14,28 +14,23 @@ import javafx.scene.control.cell.PropertyValueFactory;
 public class AirlineData {
 
     @FXML
-    private TableView<DataModel> airlineTable; // fx:id of Table
+    private TableView<DataModelAL> airlineTable; // fx:id of Table
 
     @FXML
-    private TableColumn<DataModel, String> alTime; // fx:id of column Time
+    private TableColumn<DataModelAL, String> alTime; // fx:id of column Time
 
     @FXML
-    private TableColumn<DataModel, String> alRoute; // fx:id of column Route
+    private TableColumn<DataModelAL, String> alRoute; // fx:id of column Route
 
     @FXML
-    private TableColumn<DataModel, String> alAircraft; // fx:id of column Aircraft
+    private TableColumn<DataModelAL, String> alAircraft; // fx:id of column Aircraft
 
-//    @FXML
-//    private TableColumn<DataModel, String> ap_Type; // fx:id of column Type
-//
-//    @FXML
-//    private TableColumn<DataModel, String> ap_Airline; // fx:id of column Airline
 
 
 
     public void IndiGo(ActionEvent event){ // method for IndiGo Airlines option
 
-        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
+        ObservableList<DataModelAL> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -46,7 +41,7 @@ public class AirlineData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModelAL(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft")));
             }
@@ -68,7 +63,7 @@ public class AirlineData {
 
     public void AirAsia(ActionEvent event){ // method for IndiGo Airlines option
 
-        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
+        ObservableList<DataModelAL> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -79,7 +74,7 @@ public class AirlineData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModelAL(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft")));
             }
@@ -101,7 +96,7 @@ public class AirlineData {
 
     public void GoFirst(ActionEvent event){ // method for IndiGo Airlines option
 
-        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
+        ObservableList<DataModelAL> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -112,7 +107,7 @@ public class AirlineData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModelAL(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft")));
             }
@@ -134,7 +129,7 @@ public class AirlineData {
 
     public void AirIndia(ActionEvent event){ // method for IndiGo Airlines option
 
-        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
+        ObservableList<DataModelAL> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -145,7 +140,7 @@ public class AirlineData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModelAL(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft")));
             }

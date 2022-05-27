@@ -22,11 +22,11 @@
             <Image url="@../../../designCopy.png" />
          </image>
       </ImageView>
-      <TableView layoutX="21.0" layoutY="146.0" prefHeight="194.0" prefWidth="535.0" style="-fx-background-color: #149499;">
+      <TableView fx:id="airlineTable" layoutX="21.0" layoutY="146.0" prefHeight="194.0" prefWidth="535.0" style="-fx-background-color: #149499;">
          <columns>
-            <TableColumn fx:id="air_Time" prefWidth="164.0" text="Time" />
-            <TableColumn fx:id="air_Route" prefWidth="200.0" text="Route" />
-            <TableColumn fx:id="air_Aircraft" prefWidth="172.79998779296875" text="Aircraft" />
+            <TableColumn fx:id="alTime" prefWidth="164.0" text="Time" />
+            <TableColumn fx:id="alRoute" prefWidth="200.0" text="Route" />
+            <TableColumn fx:id="alAircraft" prefWidth="172.79998779296875" text="Aircraft" />
          </columns>
       </TableView>
       <Label fx:id="LABEL" layoutX="21.0" layoutY="87.0" text="Select From Given Airlines :">

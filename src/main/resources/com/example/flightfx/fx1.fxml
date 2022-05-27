@@ -37,8 +37,8 @@
          </font></Label>
       <MenuButton layoutX="313.0" layoutY="88.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="190.0" style="-fx-background-color: #149499;" text="Options" textAlignment="JUSTIFY">
         <items>
-          <MenuItem mnemonicParsing="false" onAction="#blrAirport" text="Bengaluru (BLR)" />
-          <MenuItem mnemonicParsing="false" onAction="#ixrAirport" text="Ranchi (IXR)" />
+            <MenuItem mnemonicParsing="false" onAction="#blrAirport" text="Bengaluru (BLR)" />
+            <MenuItem mnemonicParsing="false" onAction="#ixrAirport" text="Ranchi (IXR)" />
             <MenuItem mnemonicParsing="false" onAction="#bomAirport" text="Mumbai (BOM)" />
             <MenuItem mnemonicParsing="false" onAction="#ccuAirport" text="Kolkata (CCU)" />
         </items>
