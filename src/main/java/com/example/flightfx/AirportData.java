@@ -46,10 +46,10 @@ public class AirportData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModel(Result.getString("Time_"),
                         Result.getString("Route"),
                         Result.getString("Aircraft"),
-                        Result.getString("Type"),
+                        Result.getString("Type_"),
                         Result.getString("Airline")));
             }
 
@@ -59,11 +59,9 @@ public class AirportData {
 
         }
 
-<<<<<<< HEAD
-=======
         // Assigning Data from database to the columns of the tableview
 
->>>>>>> 907f3dc9d22e2a68d6a6f8e9112319352f7a91af
+
         ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time"));
         ap_Route.setCellValueFactory(new PropertyValueFactory<>("Route"));
         ap_Aircraft.setCellValueFactory(new PropertyValueFactory<>("Aircraft"));
@@ -87,10 +85,10 @@ public class AirportData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModel(Result.getString("Time_"),
                         Result.getString("Route"),
                         Result.getString("Aircraft"),
-                        Result.getString("Type"),
+                        Result.getString("Type_"),
                         Result.getString("Airline")));
             }
 
@@ -100,11 +98,9 @@ public class AirportData {
 
         }
 
-<<<<<<< HEAD
-=======
+
         // Assigning Data from database to the columns of the tableview
 
->>>>>>> 907f3dc9d22e2a68d6a6f8e9112319352f7a91af
         ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time"));
         ap_Route.setCellValueFactory(new PropertyValueFactory<>("Route"));
         ap_Aircraft.setCellValueFactory(new PropertyValueFactory<>("Aircraft"));
@@ -128,10 +124,10 @@ public class AirportData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModel(Result.getString("Time_"),
                         Result.getString("Route"),
                         Result.getString("Aircraft"),
-                        Result.getString("Type"),
+                        Result.getString("Type_"),
                         Result.getString("Airline")));
             }
 
@@ -141,11 +137,8 @@ public class AirportData {
 
         }
 
-<<<<<<< HEAD
-=======
         // Assigning Data from database to the columns of the tableview
 
->>>>>>> 907f3dc9d22e2a68d6a6f8e9112319352f7a91af
         ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time"));
         ap_Route.setCellValueFactory(new PropertyValueFactory<>("Route"));
         ap_Aircraft.setCellValueFactory(new PropertyValueFactory<>("Aircraft"));
