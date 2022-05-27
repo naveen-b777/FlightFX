@@ -11,6 +11,10 @@ public class DataModel {
         this.Airline = Airline;
     }
 
+    public DataModel(String time, String route, String aircraft) {
+
+    }
+
     public String getTime() {
         return Time;
     }

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9ED1E5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightfx.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9ED1E5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightfx.AirlineData">
    <children>
       <ImageView fitHeight="142.0" fitWidth="104.0" layoutX="499.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -35,10 +35,10 @@
          </font></Label>
       <MenuButton layoutX="305.0" layoutY="86.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="190.0" style="-fx-background-color: #149499;" text="Options" textAlignment="JUSTIFY">
          <items>
-            <MenuItem mnemonicParsing="false" text="IndiGo" />
-            <MenuItem mnemonicParsing="false" text="AirAsia" />
-            <MenuItem mnemonicParsing="false" text="GoFirst" />
-            <MenuItem mnemonicParsing="false" text="Air India" />
+            <MenuItem mnemonicParsing="false" onAction="#IndiGo" text="IndiGo" />
+            <MenuItem mnemonicParsing="false" onAction="#AirAsia" text="AirAsia" />
+            <MenuItem mnemonicParsing="false" onAction="#GoFirst" text="GoFirst" />
+            <MenuItem mnemonicParsing="false" onAction="#AirIndia" text="Air India" />
          </items>
       </MenuButton>
    </children>
