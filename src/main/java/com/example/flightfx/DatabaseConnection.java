@@ -6,10 +6,10 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class DatabaseConnection {
-    public Connection getConnection() {
+    public static Connection getConnection() {
         String databaseName = "Flight_Data";
         String databaseUser = "root";
-        String databasePassword = "0611";
+        String databasePassword = "020701764";
         String url = "jdbc:mysql://localhost:3306/" + databaseName + "?useSSL=false";
         Connection connection = null;
         try {

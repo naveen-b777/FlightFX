@@ -61,10 +61,10 @@ public class AirportData {
             System.out.println(Result);
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time_"),
+                oblist.add(new DataModel(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft"),
-                        Result.getString("Type_"),
+                        Result.getString("Type"),
                         Result.getString("Airline")));
             }
 
@@ -74,10 +74,10 @@ public class AirportData {
 
         }
 
-        ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time_"));
+        ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time"));
         ap_Route.setCellValueFactory(new PropertyValueFactory<>("Route"));
         ap_Aircraft.setCellValueFactory(new PropertyValueFactory<>("Aircraft"));
-        ap_Type.setCellValueFactory(new PropertyValueFactory<>("Type_"));
+        ap_Type.setCellValueFactory(new PropertyValueFactory<>("Type"));
         ap_Airline.setCellValueFactory(new PropertyValueFactory<>("Airline"));
 
         airportTable.setItems(oblist);
@@ -98,10 +98,10 @@ public class AirportData {
             System.out.println(Result);
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time_"),
+                oblist.add(new DataModel(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft"),
-                        Result.getString("Type_"),
+                        Result.getString("Type"),
                         Result.getString("Airline")));
             }
 
@@ -111,10 +111,10 @@ public class AirportData {
 
         }
 
-        ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time_"));
+        ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time"));
         ap_Route.setCellValueFactory(new PropertyValueFactory<>("Route"));
         ap_Aircraft.setCellValueFactory(new PropertyValueFactory<>("Aircraft"));
-        ap_Type.setCellValueFactory(new PropertyValueFactory<>("Type_"));
+        ap_Type.setCellValueFactory(new PropertyValueFactory<>("Type"));
         ap_Airline.setCellValueFactory(new PropertyValueFactory<>("Airline"));
 
         airportTable.setItems(oblist);
@@ -135,10 +135,10 @@ public class AirportData {
             System.out.println(Result);
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time_"),
+                oblist.add(new DataModel(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft"),
-                        Result.getString("Type_"),
+                        Result.getString("Type"),
                         Result.getString("Airline")));
             }
 
@@ -148,10 +148,10 @@ public class AirportData {
 
         }
 
-        ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time_"));
+        ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time"));
         ap_Route.setCellValueFactory(new PropertyValueFactory<>("Route"));
         ap_Aircraft.setCellValueFactory(new PropertyValueFactory<>("Aircraft"));
-        ap_Type.setCellValueFactory(new PropertyValueFactory<>("Type_"));
+        ap_Type.setCellValueFactory(new PropertyValueFactory<>("Type"));
         ap_Airline.setCellValueFactory(new PropertyValueFactory<>("Airline"));
 
         airportTable.setItems(oblist);
