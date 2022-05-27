@@ -41,7 +41,7 @@ public class Controller {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fx3.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         Stage stage = new Stage();
-        stage.setTitle("Search by Route");
+        stage.setTitle("Search by Airline");
         stage.getIcons().add(new Image("logo.png"));
         stage.setScene(scene);
         stage.show();

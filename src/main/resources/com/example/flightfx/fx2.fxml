@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9ED1E5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightfx.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9ED1E5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightfx.RouteData">
    <children>
       <ImageView fitHeight="142.0" fitWidth="104.0" layoutX="499.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -22,11 +22,11 @@
             <Image url="@../../../designCopy.png" />
          </image>
       </ImageView>
-      <TableView layoutX="21.0" layoutY="146.0" prefHeight="194.0" prefWidth="535.0" style="-fx-background-color: #149499;">
+      <TableView fx:id="rtTable" layoutX="21.0" layoutY="146.0" prefHeight="194.0" prefWidth="535.0" style="-fx-background-color: #149499;">
          <columns>
-            <TableColumn fx:id="rou_Time" prefWidth="170.39996337890625" text="Time" />
-            <TableColumn fx:id="rou_Aircraft" prefWidth="192.00006103515625" text="Aircraft" />
-            <TableColumn fx:id="rou_Airline" minWidth="0.0" prefWidth="172.800048828125" text="Airline" />
+            <TableColumn fx:id="rtTime" prefWidth="170.39996337890625" text="Time" />
+            <TableColumn fx:id="rtAircraft" prefWidth="192.00006103515625" text="Aircraft" />
+            <TableColumn fx:id="rtAirline" minWidth="0.0" prefWidth="172.800048828125" text="Airline" />
          </columns>
       </TableView>
       <Label fx:id="LABEL" layoutX="21.0" layoutY="87.0" text="Select From Given Routes :">
@@ -35,10 +35,10 @@
          </font></Label>
       <MenuButton layoutX="313.0" layoutY="88.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="190.0" style="-fx-background-color: #149499;" text="Options" textAlignment="JUSTIFY">
          <items>
-            <MenuItem mnemonicParsing="false" text="BLR - PNQ" />
-            <MenuItem mnemonicParsing="false" text="IXR - BLR" />
-            <MenuItem mnemonicParsing="false" text="BLR - DXB" />
-            <MenuItem mnemonicParsing="false" text="BOM - DEL" />
+            <MenuItem mnemonicParsing="false" onAction="#BLR_PNQ" text="BLR - PNQ" />
+            <MenuItem mnemonicParsing="false" onAction="#IXR_BLR" text="IXR - BLR" />
+            <MenuItem mnemonicParsing="false" onAction="#BLR_DXB" text="BLR - DXB" />
+            <MenuItem mnemonicParsing="false" onAction="#BOM_DEL" text="BOM - DEL" />
          </items>
       </MenuButton>
    </children>
