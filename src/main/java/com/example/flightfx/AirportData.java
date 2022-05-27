@@ -1,58 +1,41 @@
 package com.example.flightfx;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.stage.Stage;
 import javafx.event.ActionEvent;
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.event.ActionEvent;
-import javafx.scene.control.cell.PropertyValueFactory;
-
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class AirportData {
 
     @FXML
-    private TableView<DataModel> airportTable;
+    private TableView<DataModel> airportTable; // fx:id of Table
 
     @FXML
-    private TableColumn<DataModel, String> ap_Time;
+    private TableColumn<DataModel, String> ap_Time; // fx:id of column Time
 
     @FXML
-    private TableColumn<DataModel, String> ap_Route;
+    private TableColumn<DataModel, String> ap_Route; // fx:id of column Route
 
     @FXML
-    private TableColumn<DataModel, String> ap_Aircraft;
+    private TableColumn<DataModel, String> ap_Aircraft; // fx:id of column Aircraft
 
     @FXML
-    private TableColumn<DataModel, String> ap_Type;
+    private TableColumn<DataModel, String> ap_Type; // fx:id of column Type
 
     @FXML
-    private TableColumn<DataModel, String> ap_Airline;
+    private TableColumn<DataModel, String> ap_Airline; // fx:id of column Airline
 
-    ObservableList<DataModel> oblist = FXCollections.observableArrayList();
 
-    public void blrAirport(ActionEvent event){
 
-        String connectQuery = "SELECT * FROM BLR";
-        System.out.println(connectQuery);
+    public void blrAirport(ActionEvent event){ // method for Bangalore Airport option
 
+        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -60,6 +43,8 @@ public class AirportData {
             ResultSet Result = connectDB.createStatement().executeQuery("SELECT * FROM BLR");
             System.out.println(Result);
 
+            // Fetching Data from the columns of the table from database
+
             while (Result.next()) {
                 oblist.add(new DataModel(Result.getString("Time"),
                         Result.getString("Route"),
@@ -74,6 +59,11 @@ public class AirportData {
 
         }
 
+<<<<<<< HEAD
+=======
+        // Assigning Data from database to the columns of the tableview
+
+>>>>>>> 907f3dc9d22e2a68d6a6f8e9112319352f7a91af
         ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time"));
         ap_Route.setCellValueFactory(new PropertyValueFactory<>("Route"));
         ap_Aircraft.setCellValueFactory(new PropertyValueFactory<>("Aircraft"));
@@ -85,11 +75,8 @@ public class AirportData {
 
     }
 
-    public void ixrAirport(ActionEvent event){
-
-        String connectQuery = "SELECT * FROM IXR";
-        System.out.println(connectQuery);
-
+    public void ixrAirport(ActionEvent event){ // method for Ranchi Airport option
+        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -97,6 +84,8 @@ public class AirportData {
             ResultSet Result = connectDB.createStatement().executeQuery("SELECT * FROM IXR");
             System.out.println(Result);
 
+            // Fetching Data from the columns of the table from database
+
             while (Result.next()) {
                 oblist.add(new DataModel(Result.getString("Time"),
                         Result.getString("Route"),
@@ -111,6 +100,11 @@ public class AirportData {
 
         }
 
+<<<<<<< HEAD
+=======
+        // Assigning Data from database to the columns of the tableview
+
+>>>>>>> 907f3dc9d22e2a68d6a6f8e9112319352f7a91af
         ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time"));
         ap_Route.setCellValueFactory(new PropertyValueFactory<>("Route"));
         ap_Aircraft.setCellValueFactory(new PropertyValueFactory<>("Aircraft"));
@@ -122,11 +116,8 @@ public class AirportData {
 
     }
 
-    public void bomAirport(ActionEvent event){
-
-        String connectQuery = "SELECT * FROM BOM";
-        System.out.println(connectQuery);
-
+    public void bomAirport(ActionEvent event){ // method for Mumbai Airport option
+        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -134,6 +125,8 @@ public class AirportData {
             ResultSet Result = connectDB.createStatement().executeQuery("SELECT * FROM BOM");
             System.out.println(Result);
 
+            // Fetching Data from the columns of the table from database
+
             while (Result.next()) {
                 oblist.add(new DataModel(Result.getString("Time"),
                         Result.getString("Route"),
@@ -148,6 +141,11 @@ public class AirportData {
 
         }
 
+<<<<<<< HEAD
+=======
+        // Assigning Data from database to the columns of the tableview
+
+>>>>>>> 907f3dc9d22e2a68d6a6f8e9112319352f7a91af
         ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time"));
         ap_Route.setCellValueFactory(new PropertyValueFactory<>("Route"));
         ap_Aircraft.setCellValueFactory(new PropertyValueFactory<>("Aircraft"));
@@ -159,17 +157,16 @@ public class AirportData {
 
     }
 
-    public void ccuAirport(ActionEvent event){
-
-        String connectQuery = "SELECT * FROM CCU";
-        System.out.println(connectQuery);
-
+    public void ccuAirport(ActionEvent event){ // method for Kolkata Airport option
+        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
 
             ResultSet Result = connectDB.createStatement().executeQuery("SELECT * FROM CCU");
             System.out.println(Result);
+
+            // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
                 oblist.add(new DataModel(Result.getString("Time_"),
@@ -185,17 +182,18 @@ public class AirportData {
 
         }
 
-        ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time_"));
+        // Assigning Data from database to the columns of the tableview
+
+        ap_Time.setCellValueFactory(new PropertyValueFactory<>("Time"));
         ap_Route.setCellValueFactory(new PropertyValueFactory<>("Route"));
         ap_Aircraft.setCellValueFactory(new PropertyValueFactory<>("Aircraft"));
-        ap_Type.setCellValueFactory(new PropertyValueFactory<>("Type_"));
+        ap_Type.setCellValueFactory(new PropertyValueFactory<>("Type"));
         ap_Airline.setCellValueFactory(new PropertyValueFactory<>("Airline"));
 
         airportTable.setItems(oblist);
 
 
     }
-
 
 }
 

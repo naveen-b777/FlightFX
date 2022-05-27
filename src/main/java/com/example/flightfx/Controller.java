@@ -1,20 +1,25 @@
 package com.example.flightfx;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+<<<<<<< HEAD
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+=======
+>>>>>>> 907f3dc9d22e2a68d6a6f8e9112319352f7a91af
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.event.ActionEvent;
 
-
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+<<<<<<< HEAD
 public class Controller {
     @FXML
     private Label welcomeText;
@@ -31,11 +36,18 @@ public class Controller {
     public static Label BLRtype;
     @FXML
     public static Label BLRairline;
+=======
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+>>>>>>> 907f3dc9d22e2a68d6a6f8e9112319352f7a91af
 
-//    @FXML
-//    pro4tected void onHelloButtonClick() {
-//        welcomeText.setText("Welcome to Flight Data Studio");
-//    }
+
+import java.io.IOException;
+
+public class Controller  {
 
     @FXML
     protected void onFirstButtonClick() throws IOException {
@@ -70,6 +82,7 @@ public class Controller {
         stage.show();
     }
 
+<<<<<<< HEAD
 
     @FXML
     private void closeButtonAction() throws IOException {
@@ -86,4 +99,6 @@ public class Controller {
     }
 
 
+=======
+>>>>>>> 907f3dc9d22e2a68d6a6f8e9112319352f7a91af
 }

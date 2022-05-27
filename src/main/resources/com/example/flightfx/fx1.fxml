@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9ED1E5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightfx.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9ED1E5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flightfx.AirportData">
    <children>
       <ImageView fitHeight="142.0" fitWidth="104.0" layoutX="499.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -22,13 +22,13 @@
             <Image url="@../../../designCopy.png" />
          </image>
       </ImageView>
-      <TableView layoutX="21.0" layoutY="146.0" prefHeight="194.0" prefWidth="535.0" style="-fx-background-color: #149499;">
+      <TableView fx:id="airportTable" layoutX="21.0" layoutY="146.0" prefHeight="194.0" prefWidth="535.0" style="-fx-background-color: #149499;">
         <columns>
-          <TableColumn prefWidth="101.60003662109375" text="Time" />
-          <TableColumn prefWidth="115.199951171875" text="Route" />
-            <TableColumn prefWidth="91.199951171875" text="Aircraft" />
-            <TableColumn prefWidth="98.4000244140625" text="Type" />
-            <TableColumn minWidth="0.0" prefWidth="130.4000244140625" text="Airline" />
+          <TableColumn fx:id="ap_Time" prefWidth="101.60003662109375" text="Time" />
+          <TableColumn fx:id="ap_Route" prefWidth="115.199951171875" text="Route" />
+            <TableColumn fx:id="ap_Aircraft" prefWidth="91.199951171875" text="Aircraft" />
+            <TableColumn fx:id="ap_Type" prefWidth="98.4000244140625" text="Type" />
+            <TableColumn fx:id="ap_Airline" minWidth="0.0" prefWidth="130.4000244140625" text="Airline" />
         </columns>
       </TableView>
       <Label fx:id="BLRtime" layoutX="21.0" layoutY="87.0" text="Select From Given Airports :">
@@ -38,9 +38,9 @@
       <MenuButton layoutX="313.0" layoutY="88.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="190.0" style="-fx-background-color: #149499;" text="Options" textAlignment="JUSTIFY">
         <items>
           <MenuItem mnemonicParsing="false" onAction="#blrAirport" text="Bengaluru (BLR)" />
-          <MenuItem mnemonicParsing="false" text="Ranchi (IXR)" />
-            <MenuItem mnemonicParsing="false" text="Mumbai (BOM)" />
-            <MenuItem mnemonicParsing="false" text="Kolkata (CCU)" />
+          <MenuItem mnemonicParsing="false" onAction="#ixrAirport" text="Ranchi (IXR)" />
+            <MenuItem mnemonicParsing="false" onAction="#bomAirport" text="Mumbai (BOM)" />
+            <MenuItem mnemonicParsing="false" onAction="#ccuAirport" text="Kolkata (CCU)" />
         </items>
       </MenuButton>
    </children>
