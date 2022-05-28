@@ -47,8 +47,7 @@ public class DataModel {
         Type = Type;
     }
 
-    public String getAirline() {
-        return Airline;
+    public String getAirline() {        return Airline;
     }
 
     public void setAirline(String airline) {
