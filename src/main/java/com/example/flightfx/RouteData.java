@@ -88,7 +88,7 @@ public class RouteData {
 
 
         rtTime.setCellValueFactory(new PropertyValueFactory<>("Time"));
-        rtAircraft.setCellValueFactory(new PropertyValueFactory<>("Aicraft"));
+        rtAircraft.setCellValueFactory(new PropertyValueFactory<>("Aircraft"));
         rtAirline.setCellValueFactory(new PropertyValueFactory<>("Airline"));
         rtTable.setItems(oblist);
     }

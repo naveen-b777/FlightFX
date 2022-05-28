@@ -46,10 +46,10 @@ public class AirportData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time_"),
+                oblist.add(new DataModel(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft"),
-                        Result.getString("Type_"),
+                        Result.getString("Type"),
                         Result.getString("Airline")));
             }
 
@@ -85,10 +85,10 @@ public class AirportData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time_"),
+                oblist.add(new DataModel(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft"),
-                        Result.getString("Type_"),
+                        Result.getString("Type"),
                         Result.getString("Airline")));
             }
 
@@ -124,10 +124,10 @@ public class AirportData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time_"),
+                oblist.add(new DataModel(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft"),
-                        Result.getString("Type_"),
+                        Result.getString("Type"),
                         Result.getString("Airline")));
             }
 
