@@ -9,7 +9,7 @@ public class DatabaseConnection {
     public static Connection getConnection() throws SQLException {
         String databaseName = "Flight_Data"; // Database Name
         String databaseUser = "root"; // Database User
-        String databasePassword = "020701764"; // Database Password
+        String databasePassword = "0611"; // Database Password
         String url = "jdbc:mysql://localhost:3306/" + databaseName + "?useSSL=false"; // Database URL
         Connection connection = null;
         try {
@@ -21,6 +21,4 @@ public class DatabaseConnection {
         }
         return connection;
     }
-
-//    comment
 }

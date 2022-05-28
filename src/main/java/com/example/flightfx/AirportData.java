@@ -14,22 +14,22 @@ import javafx.scene.control.cell.PropertyValueFactory;
 public class AirportData {
 
     @FXML
-    private TableView<DataModel> airportTable; // fx:id of Table
+    public TableView<DataModel> airportTable; // fx:id of Table
 
     @FXML
-    private TableColumn<DataModel, String> ap_Time; // fx:id of column Time
+    public TableColumn<DataModel, String> ap_Time; // fx:id of column Time
 
     @FXML
-    private TableColumn<DataModel, String> ap_Route; // fx:id of column Route
+    public TableColumn<DataModel, String> ap_Route; // fx:id of column Route
 
     @FXML
-    private TableColumn<DataModel, String> ap_Aircraft; // fx:id of column Aircraft
+    public TableColumn<DataModel, String> ap_Aircraft; // fx:id of column Aircraft
 
     @FXML
-    private TableColumn<DataModel, String> ap_Type; // fx:id of column Type
+    public TableColumn<DataModel, String> ap_Type; // fx:id of column Type
 
     @FXML
-    private TableColumn<DataModel, String> ap_Airline; // fx:id of column Airline
+    public TableColumn<DataModel, String> ap_Airline; // fx:id of column Airline
 
 
 
