@@ -14,23 +14,23 @@ import javafx.scene.control.cell.PropertyValueFactory;
 public class AirlineData {
 
     @FXML
-    public TableView<DataModel> airlineTable; // fx:id of Table
+    public TableView<DataModelAL> airlineTable; // fx:id of Table
 
     @FXML
-    public TableColumn<DataModel, String> alTime; // fx:id of column Time
+    public TableColumn<DataModelAL, String> alTime; // fx:id of column Time
 
     @FXML
-    public TableColumn<DataModel, String> alRoute; // fx:id of column Route
+    public TableColumn<DataModelAL, String> alRoute; // fx:id of column Route
 
     @FXML
-    public TableColumn<DataModel, String> alAircraft; // fx:id of column Aircraft
+    public TableColumn<DataModelAL, String> alAircraft; // fx:id of column Aircraft
 
 
 
 
     public void IndiGo(ActionEvent event){ // method for IndiGo Airlines option
 
-        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
+        ObservableList<DataModelAL> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -41,7 +41,7 @@ public class AirlineData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModelAL(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft")));
             }
@@ -63,7 +63,7 @@ public class AirlineData {
 
     public void AirAsia(ActionEvent event){ // method for AirAsia Airlines option
 
-        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
+        ObservableList<DataModelAL> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -74,7 +74,7 @@ public class AirlineData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModelAL(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft")));
             }
@@ -96,7 +96,7 @@ public class AirlineData {
 
     public void GoFirst(ActionEvent event){ // method for GoFirst Airlines option
 
-        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
+        ObservableList<DataModelAL> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -107,7 +107,7 @@ public class AirlineData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModelAL(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft")));
             }
@@ -129,7 +129,7 @@ public class AirlineData {
 
     public void AirIndia(ActionEvent event){ // method for AirIndia Airlines option
 
-        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
+        ObservableList<DataModelAL> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -140,7 +140,7 @@ public class AirlineData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModelAL(Result.getString("Time"),
                         Result.getString("Route"),
                         Result.getString("Aircraft")));
             }

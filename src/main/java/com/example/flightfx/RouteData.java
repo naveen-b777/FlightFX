@@ -14,21 +14,21 @@ import javafx.scene.control.cell.PropertyValueFactory;
 public class RouteData {
 
     @FXML
-    public TableView<DataModel> rtTable; // fx:id of Table
+    public TableView<DataModelR> rtTable; // fx:id of Table
 
     @FXML
-    public TableColumn<DataModel, String> rtTime; // fx:id of column Time
+    public TableColumn<DataModelR, String> rtTime; // fx:id of column Time
 
     @FXML
-    public TableColumn<DataModel, String> rtAirline; // fx:id of column Airline
+    public TableColumn<DataModelR, String> rtAirline; // fx:id of column Airline
 
     @FXML
-    public TableColumn<DataModel, String> rtAircraft; // fx:id of column Aircraft
+    public TableColumn<DataModelR, String> rtAircraft; // fx:id of column Aircraft
 
 
     public void BLR_PNQ(ActionEvent event) { // method for BLR_PNQ Route option
 
-        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
+        ObservableList<DataModelR> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -39,7 +39,7 @@ public class RouteData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModelR(Result.getString("Time"),
                         Result.getString("Aircraft"),
                         Result.getString("Airline")));
             }
@@ -61,7 +61,7 @@ public class RouteData {
 
     public void IXR_BLR(ActionEvent event) { // method for IXR_BLR Route option
 
-        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
+        ObservableList<DataModelR> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -72,7 +72,7 @@ public class RouteData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModelR(Result.getString("Time"),
                         Result.getString("Aircraft"),
                         Result.getString("Airline")));
             }
@@ -94,7 +94,7 @@ public class RouteData {
 
     public void BLR_DXB(ActionEvent event) { // method for BLR_DXB Route option
 
-        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
+        ObservableList<DataModelR> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -105,7 +105,7 @@ public class RouteData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModelR(Result.getString("Time"),
                         Result.getString("Aircraft"),
                         Result.getString("Airline")));
             }
@@ -127,7 +127,7 @@ public class RouteData {
 
     public void BOM_DEL(ActionEvent event) { // method for BOM_DEL Route option
 
-        ObservableList<DataModel> oblist = FXCollections.observableArrayList();
+        ObservableList<DataModelR> oblist = FXCollections.observableArrayList();
         try {
 
             Connection connectDB = DatabaseConnection.getConnection();
@@ -138,7 +138,7 @@ public class RouteData {
             // Fetching Data from the columns of the table from database
 
             while (Result.next()) {
-                oblist.add(new DataModel(Result.getString("Time"),
+                oblist.add(new DataModelR(Result.getString("Time"),
                         Result.getString("Aircraft"),
                         Result.getString("Airline")));
             }
