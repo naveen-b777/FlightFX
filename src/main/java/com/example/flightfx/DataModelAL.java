@@ -2,15 +2,18 @@ package com.example.flightfx;
 
 public class DataModelAL {
 
-    String Time,Aircraft,Airline;
+    String Time,Route,Aircraft;
 
-    public DataModelAL(String Time, String Route, String Aircraft, String Type, String Airline) {
-        this.Time = Time;
-        this.Aircraft = Aircraft;
-        this.Airline = Airline;
-    }
+//    public DataModelR(String Time, String Aircraft,String Airline) {
+//        this.Time = Time;
+//        this.Aircraft = Aircraft;
+//        this.Airline = Airline;
+//    }
 
     public DataModelAL(String time, String route, String aircraft) {
+        this.Time = time;
+        this.Route = route;
+        this.Aircraft = aircraft;
 
     }
 
@@ -22,7 +25,6 @@ public class DataModelAL {
         Time = Time;
     }
 
-
     public String getAircraft() {
         return Aircraft;
     }
@@ -31,13 +33,11 @@ public class DataModelAL {
         Aircraft = Aircraft;
     }
 
-
-    public String getAirline() {
-        return Airline;
+    public String getRoute() {
+        return Route;
     }
 
-    public void setAirline(String airline) {
-        Airline = Airline;
+    public void setRoute(String route) {
+        Route = Route;
     }
-
 }
