@@ -3,12 +3,6 @@ package com.example.flightfx;
 public class DataModelR {
     String Time,Aircraft,Airline;
 
-//    public DataModelR(String Time, String Aircraft,String Airline) {
-//        this.Time = Time;
-//        this.Aircraft = Aircraft;
-//        this.Airline = Airline;
-//    }
-
     public DataModelR(String time, String aircraft, String airline) {
         this.Time = time;
         this.Aircraft = aircraft;

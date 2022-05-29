@@ -1,15 +1,10 @@
 package com.example.flightfx;
 
 import javafx.application.Application;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-
-import java.util.Objects;
 
 public class Main extends Application {
     @Override

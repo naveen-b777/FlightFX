@@ -4,12 +4,6 @@ public class DataModelAL {
 
     String Time,Route,Aircraft;
 
-//    public DataModelR(String Time, String Aircraft,String Airline) {
-//        this.Time = Time;
-//        this.Aircraft = Aircraft;
-//        this.Airline = Airline;
-//    }
-
     public DataModelAL(String time, String route, String aircraft) {
         this.Time = time;
         this.Route = route;
